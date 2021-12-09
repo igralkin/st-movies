@@ -16,7 +16,7 @@ def movie_view(request):
     context = {'movies': movies}
     return render(request, 'movies/index.html', context=context)
 
-# def movie_view(request, movie_id):
-#
-#   movie_title = movies_data.get(movie_id)
-#   return HttpResponse(f'Это фильм {movie_title}')
+def movie_view(request, movie_id):
+
+  movie_title = movies_data.get(movie_id)
+  return HttpResponse(f'Это фильм {movie_title}')
